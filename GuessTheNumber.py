@@ -5,6 +5,7 @@
 import random
 
 rand = random.randint(1, 10)
+guesses = 0
 
 # The following function tests a string to see if it
 # is an integer.
@@ -34,6 +35,7 @@ if int(guess) == rand:
 while int(guess) != rand:
     # If the user's guess is too low:
     if int(guess) < rand:
+        guesses += 1
         guess = int(input("Too low! Guess again:"))
         # Validate the new guess.
         while represents_int(guess) is not True:
@@ -41,6 +43,7 @@ while int(guess) != rand:
     else:
         # If the user's guess is to high:
         if int(guess) > rand:
+            guesses += 1
             guess = int(input("Too high! Guess again:"))
             # Validate the new guess.
             while represents_int(guess) is not True:
@@ -48,3 +51,4 @@ while int(guess) != rand:
     # Tell the user when they get the answer right.
     if int(guess) == rand:
         print("Yay! You got it!")
+        print("Guesses: ", guesses)

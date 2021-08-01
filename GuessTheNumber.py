@@ -1,14 +1,12 @@
 # Author: Harriet Poe
-# This program will allow the user to guess a number
-# between 1 and 10. 
+# This program will allow the user to guess a number between 1 and 10. 
 
 import random
 
 rand = random.randint(1, 10)
 guesses = 0
 
-# The following function tests a string to see if it
-# is an integer.
+# The following function tests a string to see if it is an integer.
 
 
 def represents_int(s):

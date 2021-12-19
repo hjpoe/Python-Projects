@@ -1,4 +1,4 @@
-# Author: Harriet Poe
+# Author: H J Poe
 # This program will allow the user to guess a number between 1 and 10. 
 
 import random

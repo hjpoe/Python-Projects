@@ -1,4 +1,4 @@
-# Author: Harriet Poe
+# Author: H J Poe
 # This program will generate a name using syllables.
 
 import random
